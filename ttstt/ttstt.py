@@ -18,10 +18,10 @@ import soundfile
 DetectorFactory.seed = 0
 detector = google_translator()
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/opt/docker/test/keys/key-file.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/opt/ttstt/keys/key-file.json'
 
 def get_voices():
-    with open("/opt/docker/test/voices.yaml", 'r') as stream:
+    with open("/opt/ttstt/voices.yaml", 'r') as stream:
         try:
             return yaml.safe_load(stream)
         except yaml.YAMLError as e:
