@@ -26,7 +26,7 @@ RUN  pip3 install flask --no-cache-dir && \
      pip3 install google_trans_new --no-cache-dir && \
      pip3 install pyttsreverso--no-cache-dir
      
- RUN mkdir /opt/ttstt
+ RUN mkdir -p /opt/ttstt/keys
  
  COPY ttstt /opt/ttstt
  
