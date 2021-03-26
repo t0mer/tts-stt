@@ -1,0 +1,137 @@
+english:
+   id: 1
+   voices:
+      voice_!: Heather-US-English
+      voice_2: Karen-US-English
+      voice_3: Kenny-US-English
+      voice_4: Laura-US-English
+      voice_5: Micah-US-English
+      voice_6: Nelly-US-English
+      voice_7: Rod-US-English
+      voice_8: Ryan-US-English
+      voive_9: Saul-US-English
+      voice_10: Sharon-US-English
+      voice_11: Tracy-US-English
+      voice_12: Will-US-English
+   name: English
+arabic:
+   id: 2
+   voices:
+      voice_1: Nizar-Arabic
+      voice_2: Salma-Arabic
+   name: Arabic
+brazilian:
+   id: 3
+   voices:
+      voice_1: Marcia-Brazilian
+   name: Brazilian
+catalan:
+   id: 4
+   voices:
+      voice_1: Laia-Catalan
+   name: Catalan
+czech:
+   id: 5
+   voices:
+      voice_1: Eliska-Czech
+   name: Czech
+danish:
+   id: 6
+   voices:
+      voice_!: Rasmus-Danish
+      voice_2: Mette-Danish
+   name: Danish
+dutch:
+   id: 7
+   voices:
+      voice_1: Daan-Dutch
+      voice_2: Femke-Dutch
+   name: Dutch
+finnish:
+   id: 8
+   voices:
+      voice_!: Sanna-Finnish
+   name: Finnish
+french:
+   id: 9
+   voices:
+      voice_1: Antoine-Frenc
+      voice_2: Alice-French
+   name: French
+german:
+   id: 10
+   voices:
+      voice_1: Andreas-German
+      voice_2: Claudia-German
+      voice_3: Julia-German
+      voice_4: Klaus-German
+      voice_5: Sarah-German
+   name: German
+greek:
+   id: 11
+   voices:
+      voice_!: Dimitris-Greek
+   name: Greek
+hebrew:
+   id: 12
+   voices:
+      voice_1: he-IL-Asaf-Hebrew
+   name: Hebrew
+italian:
+   id: 13
+   voices:
+      voice_!: Vittorio-Italian
+      voice_2: Chiara-Italian
+   name: Italian
+japanese:
+   id: 14
+   voices:
+      voice_!: Sakura-Japanese
+   name: Japanese
+korean:
+   id: 15
+   voices:
+      voice_1: Minji-Korean
+   name: Korean
+norwegian:
+   id: 16
+   voices:
+      voice_1: Olav-Norwegian
+      voice_2: Kari-Norwegian
+   name: Norwegian
+polish:
+   id: 17
+   voices:
+      voice_1: Ania-Polish
+   name: Polish
+romanian:
+   id: 18
+   voices:
+      voice_1: ro-RO-Andrei-Romanian
+   name: Romanian
+portuguese:
+   id: 19
+   voices:
+      voice_1: Celia-Portuguese
+   name: Portuguese
+russian:
+   id: 20
+   voices:
+      voice_!: Alyona-Russian
+   name: Russian
+spanish:
+   id: 21
+   voices:
+      voice_!: Antonio-Spanish
+      voice_2: Ines-Spanish
+   name: Spanish
+swedish:
+   id: 22
+   voices:
+      voice_!: Erik-Swedish
+   name: Swedish
+turkish:
+   id: 23
+   voices:
+      voice_1: Ipek-Turkish
+   name: Turkish
