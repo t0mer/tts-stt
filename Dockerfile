@@ -26,4 +26,10 @@ RUN  pip3 install flask --no-cache-dir && \
      pip3 install google_trans_new --no-cache-dir && \
      pip3 install pyttsreverso--no-cache-dir
      
+ RUN mkdir /opt/ttstt
  
+ COPY ttstt /opt/ttstt
+ 
+ EXPOSE 8080
+ 
+ ENTRYPOINT ["/usr/bin/python3", "/opt/ttstt/ttstt.py"]
