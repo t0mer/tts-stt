@@ -24,7 +24,7 @@ RUN  pip3 install flask --no-cache-dir && \
      pip3 install pydub --no-cache-dir && \
      pip3 install pyyaml --no-cache-dir && \
      pip3 install google_trans_new --no-cache-dir && \
-     pip3 install pyttsreverso--no-cache-dir
+     pip3 install pyttsreverso --no-cache-dir
      
  RUN mkdir -p /opt/ttstt/keys
  
