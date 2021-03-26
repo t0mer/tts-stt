@@ -4,6 +4,7 @@ FROM ubuntu:18.04
 LABEL maintainer="tomer.klein@gmail.com"
 
 ENV PYTHONIOENCODING=utf-8
+ENV LANG=C.UTF-8
 
 RUN apt update -yqq
 
@@ -26,6 +27,7 @@ RUN  pip3 install --upgrade pip --no-cache-dir && \
      pip3 install pydub --no-cache-dir && \
      pip3 install pyyaml --no-cache-dir && \
      pip3 install google_trans_new --no-cache-dir && \
+     pip3 install numpy --no-cache-dir && \
      pip3 install pyttsreverso --no-cache-dir
      
  RUN mkdir -p /opt/ttstt/keys
