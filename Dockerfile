@@ -13,7 +13,8 @@ RUN apt -yqq install python3-pip && \
     apt -yqq install portaudio19-dev && \
     apt -yqq install ffmpeg
     
-RUN  pip3 install flask --no-cache-dir && \
+RUN  pip3 install --upgrade setuptools --no-cache-dir && \
+     pip3 install flask --no-cache-dir && \
      pip3 install flask_restful --no-cache-dir && \
      pip3 install loguru --no-cache-dir && \
      pip3 install cryptography==2.6.1 --no-cache-dir && \
