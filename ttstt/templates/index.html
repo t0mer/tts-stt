@@ -1,88 +1,100 @@
-<!DOCTYPE html>
 <html>
 
 <head>
-    <title>Language Detection and tts using Python & Flask</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slider.css">
-  
+
+    <link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="./css/style.css" rel="stylesheet" id="style-css">
+
 
 </head>
+<body>
+    <div class="content">
+        <!-- Nav pills -->
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="pill" href="#TTS">Text To Speech</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="pill" href="#STT">Speech To Text</a>
+            </li>
+        </ul>
 
-<body style="background-color: #7e7e7e">
-    <div class="row">
-        <div class="col-sm-6 col-sm-offset-3">
-            <div class="well" style="margin-top: 10%;">
-                <h3>Language Detection</h3>
-                <form role="form" id="contactForm" data-toggle="validator" class="shake">
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <label for="name" class="h4">Text</label>
-                            <input type="text" class="form-control" id="text" placeholder="Enter Text">
-                            <div class="help-block with-errors"></div>
-                        </div>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div id="TTS" class="container tab-pane active">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Text</label>
+                        <input type="text" class="form-control" id="text" placeholder="Some Text">
+                        <small class="form-text text-muted">This text will be converted to voice </small>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="submit" class="btn btn-primary pull-left">Detect Language</button>
 
                     </div>
-                    <button type="button" id="submit" class="btn btn-success btn pull-left ">Detect Language</button>
-                    <div class="clearfix"></div>
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <label for="name" class="h4">Detected Language</label>
-                            <input type="text" class="form-control" id="lang">
-                            <div class="help-block with-errors"></div>
-                        </div>
-
+                    <div class="form-group">
+                        <label for="name">Detected Language</label>
+                        <input type="text" class="form-control" id="lang" readonly>
+                        <div class="help-block with-errors"></div>
                     </div>
-                    
-                    <div class="row">
-                        <div class="form-group col-sm-6">
-                            <label for="name" class="h4">Optional Voices</label>
-                            <select name="voices" class="form-control" id="voices"></select>
-                            
-                        </div>
-
-                    </div>
-                    
-                    
-                     <div class="row">
-                        <div class="form-group col-sm-6">
-                            <label for="name" class="h4">Pitch</label>
-                             <label for="name" class="h4">Optional Voices</label>
-                              <div class="slidecontainer">
-                                <input type="range" min="1" max="150" value="100" class="slider" id="pitch">
-                                <p>Value: <span id="pitch_val"></span></p>
-                         </div>
-                        </div>
-
+                    <div class="form-group">
+                        <label for="voices">Optional Voices</label>
+                        <select name="voices" class="form-control" id="voices"></select>
+                        <small id="emailHelp" class="form-text text-muted">Optional Voices</small>
                     </div>
 
 
-                    <button type="button" id="play" class="btn btn-success btn pull-left">Say it!</button>
-                    <div class="clearfix"></div>
-                    
+                    <div class="form-group">
+                        <label for="name">Pitch</label>
+
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="150" value="100" class="slider" id="pitch">
+                            <p>Value: <span id="pitch_val"></span></p>
+                        </div>
+                    </div>
+                    <button type="button" id="play" class="btn btn-success btn pull-left">Read it for me</button>
                 </form>
-               
             </div>
-           
+            <div id="STT" class="container tab-pane fade">
+                <form method="post" enctype="multipart/form-data" id="sttform">
+                    <div class="form-group">
+                        <label>Select audio file</label>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <span class="btn btn-primary btn-file">
+                                    Browse… <input type="file" id="imgInp" name="file">
+                                </span>
+                            </span>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="voices">Select Language</label>
+                        <select name="languages" class="form-control" id="languages"></select>
+                        <small id="langHelp" class="form-text text-muted"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="InputUsername">Transcript</label>
+                        <textarea class="form-control" name="trsnscript" id="trsnscript"></textarea>
+                        <small id="transcriptHelp" class="form-text text-muted"></small>
+                    </div>
+                     <button type="button" id="transciptBtn" class="btn btn-primary">Write it for me</button>
+                </form>
+            </div>
         </div>
-    
-    
-    
     </div>
-
- 
-
 </body>
-<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/form-scripts.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-
 
 
 </html>

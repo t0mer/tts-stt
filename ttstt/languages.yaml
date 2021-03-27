@@ -1,0 +1,225 @@
+language_1:
+  name: Afrikaans (South Africa)
+  code: af-ZA
+language_2:
+  name: Arabic (Bahrain)
+  code: ar-BH
+language_3:
+  name: Arabic (Egypt)
+  code: ar-EG
+language_4:
+  name: Arabic (Iraq)
+  code: ar-IQ
+language_5:
+  name: Arabic (Israel)
+  code: ar-IL
+language_6:
+  name: Hebrew (Israel)
+  code: iw-IL
+language_7:
+  name: Amharic (Ethiopia)
+  code: am-ET
+language_8:
+  name: Arabic (Algeria)
+  code: ar-DZ
+language_9:
+  name: Arabic (Jordan)
+  code: ar-JO
+language_10:
+  name: Arabic (Lebanon)
+  code: ar-LB
+language_11:
+  name: Arabic (Saudi Arabia)
+  code: ar-SA
+language_12:
+  name: Azerbaijani (Azerbaijan)
+  code: az-AZ
+language_13:
+  name: Bengali (Bangladesh)
+  code: bn-BD
+language_14:
+  name: Bengali (India)
+  code: bn-IN
+language_15:
+  name: Bulgarian (Bulgaria)
+  code: bg-BG
+language_16:
+  name: Catalan (Spain)
+  code: ca-ES
+language_17:
+  name: Chinese, Cantonese
+  code: yue-Hant-HK
+language_18:
+  name: Chinese, Mandarin (Simplified, China)
+  code: zh (cmn-Hans-CN)
+language_19:
+  name: Croatian (Croatia)
+  code: hr-HR
+language_20:
+  name: Czech (Czech Republic)
+  code: cs-CZ
+language_21:
+  name: Danish (Denmark)
+  code: da-DK
+language_22:
+  name: Dutch (Belgium)
+  code: nl-BE
+language_23:
+  name: Dutch (Netherlands)
+  code: nl-NL
+language_24:
+  name: English (Australia)
+  code: en-AU
+language_25:
+  name: English (Canada)
+  code: en-CA
+language_26:
+  name: English (Ireland)
+  code: en-IE
+language_27:
+  name: English (New Zealand)
+  code: en-NZ
+language_28:
+  name: English (United Kingdom)
+  code: en-GB
+language_29:
+  name: English (United States)
+  code: en-US
+language_30:
+  name: Estonian (Estonia)
+  code: et-EE
+language_31:
+  name: Filipino (Philippines)
+  code: fil-PH
+language_32:
+  name: Finnish (Finland)
+  code: fi-FI
+language_33:
+  name: French (Belgium)
+  code: fr-BE
+language_34:
+  name: French (Canada)
+  code: fr-CA
+language_35:
+  name: French (France)
+  code: fr-FR
+language_36:
+  name: French (Switzerland)
+  code: fr-CH
+language_37:
+  name: Georgian (Georgia)
+  code: ka-GE
+language_38:
+  name: German (Austria)
+  code: de-AT
+language_39:
+  name: German (Germany)
+  code: de-DE
+language_40:
+  name: German (Switzerland)
+  code: de-CH
+language_41:
+  name: Greek (Greece)
+  code: el-GR
+language_42:
+  name: Hindi (India)
+  code: hi-IN
+language_43:
+  name: Hungarian (Hungary)
+  code: hu-HU
+language_44:
+  name: Icelandic (Iceland)
+  code:  is-IS
+language_45:
+  name: Indonesian (Indonesia)
+  code: id-ID
+language_46:
+  name: Italian (Italy)
+  code: it-IT
+language_47:
+  name: Slovenian (Slovenia)
+  code: sl-SI
+language_48:
+  name: Italian (Switzerland)
+  code: it-CH
+language_49:
+  name: Japanese (Japan)
+  code: ja-JP
+language_50:
+  name: Latvian (Latvia)
+  code: lv-LV
+language_51:
+  name: Malay (Malaysia)
+  code: ms-MY
+language_52:
+  name: Nepali (Nepal)
+  code: ne-NP
+language_53:
+  name: Norwegian Bokmål (Norway)
+  code: no-NO
+language_54:
+  name: Persian (Iran)
+  code: fa-IR
+language_55:
+  name: Polish (Poland)
+  code: pl-PL
+language_56:
+  name: Portuguese (Brazil)
+  code: pt-BR
+language_57:
+  name: Portuguese (Portugal)
+  code: pt-PT
+language_58:
+  name: Romanian (Romania)
+  code: ro-RO
+language_59:
+  name: Russian (Russia)
+  code: ru-RU
+language_60:
+  name: Serbian (Serbia)
+  code: sr-RS
+language_61:
+  name: Slovak (Slovakia)
+  code: sk-SK
+language_62:
+  name: Slovenian (Slovenia)
+  code: sl-SI
+language_63:
+  name: Spanish (Argentina)
+  code: es-AR
+language_64:
+  name: Spanish (Bolivia)
+  code: es-BO
+language_65:
+  name: Spanish (Chile)
+  code: es-CL
+language_66:
+  name: Spanish (Colombia)
+  code: es-CO
+language_67:
+  name: Spanish (Mexico)
+  code: es-MX
+language_68:
+  name: Spanish (Spain)
+  code: es-ES
+language_69:
+  name: Spanish (United States)
+  code: es-US
+language_70:
+  name: Swedish (Sweden)
+  code: sv-SE
+language_71:
+  name: Thai (Thailand)
+  code: th-TH
+language_72:
+  name: Turkish (Turkey)
+  code: tr-TR
+language_73:
+  name: Ukrainian (Ukraine)
+  code: uk-UA
+language_74:
+  name: Uzbek (Uzbekistan)
+  code: uz-UZ
+language_75:
+  name: Vietnamese (Vietnam)
+  code: vi-VN
