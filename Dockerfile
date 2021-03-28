@@ -4,6 +4,7 @@ FROM ubuntu:18.04
 LABEL maintainer="tomer.klein@gmail.com"
 
 ENV PYTHONIOENCODING=utf-8
+ENV LANG=C.UTF-8
 
 RUN apt update -yqq
 
@@ -13,7 +14,9 @@ RUN apt -yqq install python3-pip && \
     apt -yqq install portaudio19-dev && \
     apt -yqq install ffmpeg
     
-RUN  pip3 install flask --no-cache-dir && \
+RUN  pip3 install --upgrade pip --no-cache-dir && \
+     pip3 install --upgrade setuptools --no-cache-dir && \
+     pip3 install flask --no-cache-dir && \
      pip3 install flask_restful --no-cache-dir && \
      pip3 install loguru --no-cache-dir && \
      pip3 install cryptography==2.6.1 --no-cache-dir && \
@@ -24,9 +27,10 @@ RUN  pip3 install flask --no-cache-dir && \
      pip3 install pydub --no-cache-dir && \
      pip3 install pyyaml --no-cache-dir && \
      pip3 install google_trans_new --no-cache-dir && \
-     pip3 install pyttsreverso--no-cache-dir
+     pip3 install numpy --no-cache-dir && \
+     pip3 install pyttsreverso --no-cache-dir
      
- RUN mkdir /opt/ttstt
+ RUN mkdir -p /opt/ttstt/keys
  
  COPY ttstt /opt/ttstt
  
