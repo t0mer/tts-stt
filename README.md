@@ -40,8 +40,14 @@ Once you open the google console, click on the dropdown at the top. This dropdow
 
 Then enter your application name and click on Create.
 
-##### Step 1) Enable Cloud Speech-To-Text API
+##### Step 2) Enable Cloud Speech-To-Text API
 Once you have created your google application, you need to grant your application access to the “Google Cloud Speech-To-Text” API. To do so, go to the application dashboard and from there, go to the APIs overview. See below how to access:
 
 [![APIs overview](https://github.com/t0mer/tts-stt/blob/main/screenshots/apis%20overview.png?raw=true "APIs overview")](https://github.com/t0mer/tts-stt/blob/main/screenshots/apis%20overview.png?raw=true "APIs overview")
+
+Click on “Enable Apis and Service,” and then search by “speech,” then all Google APIs to do with text will be listed.
+
+[![Enable Apis and Service](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20api%20and%20services.png?raw=true "Enable Apis and Service")](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20api%20and%20services.png?raw=true "Enable Apis and Service")
+
+
 
