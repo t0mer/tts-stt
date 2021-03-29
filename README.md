@@ -36,6 +36,6 @@ Once you open the google console, click on the dropdown at the top. This dropdow
 
 [![Google Application](https://github.com/t0mer/tts-stt/blob/main/screenshots/google%20applications%20dashboard.png?raw=true "Google Application")](https://github.com/t0mer/tts-stt/blob/main/screenshots/google%20applications%20dashboard.png?raw=true "Google Application")
 
-[![New Application](https://raw.githubusercontent.com/t0mer/tts-stt/main/screenshots/new%20project.png?raw=true "New Application")](https://raw.githubusercontent.com/t0mer/tts-stt/main/screenshots/new%20project.png?raw=true "New Application")
+[![New Application](https://github.com/t0mer/tts-stt/blob/main/screenshots/new%20project.png?raw=true "New Application")](https://github.com/t0mer/tts-stt/blob/main/screenshots/new%20project.png?raw=true "New Application")
 
 
