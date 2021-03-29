@@ -35,3 +35,7 @@ The first thing you need to access Google APIs is a Google account and create a 
 Once you open the google console, click on the dropdown at the top. This dropdown is displaying your existing google application. After clicking, a pop up will appear, then click on “New Project.”
 
 [![Google Application](https://github.com/t0mer/tts-stt/blob/main/screenshots/google%20applications%20dashboard.png?raw=true "Google Application")](https://github.com/t0mer/tts-stt/blob/main/screenshots/google%20applications%20dashboard.png?raw=true "Google Application")
+
+[![New Application](https://raw.githubusercontent.com/t0mer/tts-stt/main/screenshots/new%20project.png?raw=true "New Application")](https://raw.githubusercontent.com/t0mer/tts-stt/main/screenshots/new%20project.png?raw=true "New Application")
+
+
