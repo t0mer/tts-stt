@@ -49,5 +49,13 @@ Click on “Enable Apis and Service,” and then search by “speech,” then al
 
 [![Enable Apis and Service](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20api%20and%20services.png?raw=true "Enable Apis and Service")](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20api%20and%20services.png?raw=true "Enable Apis and Service")
 
+[![Enable STT](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20stt%20service.png?raw=true "Enable STT ")](https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20stt%20service.png?raw=true "https://github.com/t0mer/tts-stt/blob/main/screenshots/enable%20stt%20service.png?raw=true")
+
+And then click “Enable.” Once enabled, you will grant permissions to your application to access the “Google Cloud Speech to Text API.”
+
+##### Step 3) Download Google Credentials
+The next step is Downloading your Google credentials. The credentials are necessary so Google can authenticate your application, and therefore Google knows that their API is being accessed by you. This way, they can measure how much you are using their APIs and charge you if the consumption passes the free threshold.
+
+Here are the steps to download the google credentials. First, from the home dashboard, got to “Go to APIs overview,” just like before, and on the left-hand side menu, click on credentials.
 
 
