@@ -65,10 +65,14 @@ Then click on “Create Credentials” and create a “Service Account.”
 [![Service Account](https://github.com/t0mer/tts-stt/blob/main/screenshots/Service%20Account.png?raw=true "Service Account")](https://github.com/t0mer/tts-stt/blob/main/screenshots/Service%20Account.png?raw=true "Service Account")
 
 Enter any service account name you like, and click Create.
+Optional, you can grant service account access to the project, and click Done.
 
-Now click on the service account you just created. The last click will take you to the service account details. Go to the “Keys” section and click on “Add Key” and “Create New Key,” which will create a new key. This key is associated with your application through the service account.
+[![Grant Access](https://github.com/t0mer/tts-stt/blob/main/screenshots/Grant%20Access.png?raw=true "Grant Access")](https://github.com/t0mer/tts-stt/blob/main/screenshots/Grant%20Access.png?raw=true "Grant Access")
 
+Now click on the service account you just created. The last click will take you to the service account details.
 
+[![service account details](https://github.com/t0mer/tts-stt/blob/main/screenshots/Service%20Accounts.png?raw=true "service account details")](https://github.com/t0mer/tts-stt/blob/main/screenshots/Service%20Accounts.png?raw=true "service account details")
 
+Go to the “Keys” section and click on “Add Key” and “Create New Key,” which will create a new key. This key is associated with your application through the service account.
 
-
+[![Add Key](https://github.com/t0mer/tts-stt/blob/main/screenshots/add%20key.png?raw=true "Add Key")](https://github.com/t0mer/tts-stt/blob/main/screenshots/add%20key.png?raw=true "Add Key")
