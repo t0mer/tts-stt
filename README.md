@@ -103,3 +103,7 @@ services:
 "key-file.json" name is mandatory (you can't change it), this is the key file you have created and downloaded in step 3.
 
 Now, run ```docker-copmose up -d``` to pull and run your container.
+Open your browser and nevigate to your container ip address wieh port 8080, you should see the following screen.
+[![TTS](https://github.com/t0mer/tts-stt/blob/main/screenshots/tts-stt.PNG?raw=true "TTS")](https://github.com/t0mer/tts-stt/blob/main/screenshots/tts-stt.PNG?raw=true "TTS")
+
+
