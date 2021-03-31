@@ -24,7 +24,7 @@ TTS-STT is a Python & [Flask](https://flask.palletsprojects.com/en/1.1.x/) power
 
  
 The TTS (Text to Speech) feature is free thanks to [Reverso Translations](https://www.reverso.net),
-But the Speech To Text feature requires active google api cloud account with enabled billing account (pricing table can be found [here](https://cloud.google.com/speech-to-text/pricing).
+But the Speech To Text feature requires active google api cloud account with enabled billing account (pricing table can be found [here](https://cloud.google.com/speech-to-text/pricing)).
 
 ## Installation
 As i mentioned, in order to use Google Speech Recognition, we need to create Google Application and enable the API. Here are the steps you need to follow to integrate your program with the Google Speech-To-Text API.
