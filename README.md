@@ -76,3 +76,7 @@ Now click on the service account you just created. The last click will take you 
 Go to the “Keys” section and click on “Add Key” and “Create New Key,” which will create a new key. This key is associated with your application through the service account.
 
 [![Add Key](https://github.com/t0mer/tts-stt/blob/main/screenshots/add%20key.png?raw=true "Add Key")](https://github.com/t0mer/tts-stt/blob/main/screenshots/add%20key.png?raw=true "Add Key")
+
+In the pop-up, select JSON and click on Create, which will download a JSON file containing the key to your machine. Please make a note of where you save this file since you will need it next.
+
+[![Json File](https://github.com/t0mer/tts-stt/blob/main/screenshots/Key%20type.png?raw=true "Json File")](https://github.com/t0mer/tts-stt/blob/main/screenshots/Key%20type.png?raw=true "Json File")
