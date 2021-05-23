@@ -20,7 +20,7 @@ TTS-STT is a Python & [Flask](https://flask.palletsprojects.com/en/1.1.x/) power
 * [PyYAML](https://pypi.org/project/PyYAML/)
 * [Google trans new](https://pypi.org/project/google-trans-new/)
 * [Numpy](https://pypi.org/project/numpy/)
-* [Yuval Mejahez](https://github.com/rt400) for creating [pyttsreverso](https://github.com/rt400/pyttsreverso)
+* [Yuval Mejahez](https://github.com/rt400) for creating [pyttsreverso](https://github.com/rt400/pyttsreverso). Be sure you are running version 0.3
 
  
 The TTS (Text to Speech) feature is free thanks to [Reverso Translations](https://www.reverso.net),
