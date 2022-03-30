@@ -15,23 +15,13 @@ RUN apt -yqq install python3-pip && \
     apt -yqq install ffmpeg
     
 RUN  pip3 install --upgrade pip --no-cache-dir && \
-     pip3 install --upgrade setuptools --no-cache-dir && \
-     pip3 install flask --no-cache-dir && \
-     pip3 install flask_restful --no-cache-dir && \
-     pip3 install loguru --no-cache-dir && \
-     pip3 install cryptography==2.6.1 --no-cache-dir && \
-     pip3 install google-cloud-speech --no-cache-dir && \
-     pip3 install wavinfo --no-cache-dir && \
-     pip3 install soundfile --no-cache-dir && \
-     pip3 install wave --no-cache-dir && \
-     pip3 install pydub --no-cache-dir && \
-     pip3 install pyyaml --no-cache-dir && \
-     pip3 install google_trans_new --no-cache-dir && \
-     pip3 install numpy --no-cache-dir && \
-     pip3 install pyttsreverso --no-cache-dir
+     pip3 install --upgrade setuptools --no-cache-dir
      
  RUN mkdir -p /opt/ttstt/keys
+ COPy requirements.txt /opt/ttstt/requirements.txt
  
+ RUN pip3 install -r /opt/ttstt/requirements.txt
+
  COPY ttstt /opt/ttstt
  
  EXPOSE 8080
