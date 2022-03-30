@@ -86,7 +86,7 @@ In the pop-up, select JSON and click on Create, which will download a JSON file 
 ```yaml
 version: "3.7"
 services:
-  portainer:
+  tts-stt:
     image: techblog/tts-stt:latest
     ports:
       - "8080:8080"
