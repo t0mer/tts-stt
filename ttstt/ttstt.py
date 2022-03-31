@@ -165,8 +165,11 @@ def detect():
     # logger.info("Writing devices to file")
     try:
         data = list(request.form.keys())[0]
+        logger.debug("Data:" + data)
         detect_result = detector.detect(data)
+        logger.debug("Detect Result:" + str(detect_result))
         detected_lang = str(detect_result).split(',')[1].replace(']','').replace("'","").strip()
+        logger.debug("Detected Lang:" + detected_lang)
         return jsonify('{"success":1,"lang":"' + detected_lang + '"}')
     except Exception as e:
         logger.error( str(e))
