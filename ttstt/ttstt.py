@@ -161,16 +161,16 @@ def languages():
 
 
 @app.route('/detect', methods=['POST'])
-def save_devices():
+def detect():
     # logger.info("Writing devices to file")
     try:
         data = list(request.form.keys())[0]
         detect_result = detector.detect(data)
         detected_lang = str(detect_result).split(',')[1].replace(']','').replace("'","").strip()
         return jsonify('{"success":1,"lang":"' + detected_lang + '"}')
-    except Exception as ex:
-        logger.error( str(ex))
-        return jsonify('{"success":0,"error":"' + str(ex) +'"}')
+    except Exception as e:
+        logger.error( str(e))
+        return jsonify('{"success":0,"error":"' + str(e) +'"}')
 
 
 
@@ -193,7 +193,7 @@ def play():
         f.close()
         return send_file(voice_file,as_attachment=False)
     except Exception as ex:
-        logger.error(str(e))
+        logger.error(str(ex))
     finally:
         if os.path.exists(voice_file):
             os.remove(voice_file)
