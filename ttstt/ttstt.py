@@ -17,7 +17,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/opt/ttstt/keys/key-file.json'
 
 # Getting list of supported voices
 def get_voices():
-    with open("./voices.yaml", 'r') as stream:
+    with open("/opt/ttstt/voices.yaml", 'r') as stream:
         try:
             logger.info("Reading Voices from voices file")
             return yaml.safe_load(stream)
@@ -26,7 +26,7 @@ def get_voices():
 
 # Getting the list of supported languages
 def get_languages():
-    with open("./languages.yaml", 'r') as stream:
+    with open("/opt/ttstt/languages.yaml", 'r') as stream:
         try:
             logger.info("Reading Languages from languages file")
             return yaml.safe_load(stream)
