@@ -14,7 +14,7 @@ $(document).ready(function () {
             success: function (data) {
                 data = $.parseJSON(data);
                 if (data.success == "1") {
-                    formSuccess(data.lang);
+                    formSuccess(data.name);
                     getVOices(data.lang)
                     var listItems = "";
                 } else {

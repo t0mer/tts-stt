@@ -3,6 +3,7 @@ flask_restful
 loguru
 cryptography
 google-cloud-speech
+google-cloud-translate==2.0.1
 wavinfo
 soundfile
 wave

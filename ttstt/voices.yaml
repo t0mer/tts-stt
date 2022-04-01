@@ -1,7 +1,7 @@
-english:
+en:
    id: 1
    voices:
-      voice_!: Heather-US-English
+      voice_1: Heather-US-English
       voice_2: Karen-US-English
       voice_3: Kenny-US-English
       voice_4: Laura-US-English
@@ -14,51 +14,51 @@ english:
       voice_11: Tracy-US-English
       voice_12: Will-US-English
    name: English
-arabic:
+ar:
    id: 2
    voices:
       voice_1: Nizar-Arabic
       voice_2: Salma-Arabic
    name: Arabic
-brazilian:
+pt:
    id: 3
    voices:
       voice_1: Marcia-Brazilian
    name: Brazilian
-catalan:
+ca:
    id: 4
    voices:
       voice_1: Laia-Catalan
    name: Catalan
-czech:
+cs:
    id: 5
    voices:
       voice_1: Eliska-Czech
    name: Czech
-danish:
+da:
    id: 6
    voices:
       voice_!: Rasmus-Danish
       voice_2: Mette-Danish
    name: Danish
-dutch:
+nl:
    id: 7
    voices:
       voice_1: Daan-Dutch
       voice_2: Femke-Dutch
    name: Dutch
-finnish:
+fi:
    id: 8
    voices:
       voice_!: Sanna-Finnish
    name: Finnish
-french:
+fr:
    id: 9
    voices:
       voice_1: Antoine-Frenc
       voice_2: Alice-French
    name: French
-german:
+de:
    id: 10
    voices:
       voice_1: Andreas-German
@@ -67,70 +67,70 @@ german:
       voice_4: Klaus-German
       voice_5: Sarah-German
    name: German
-greek:
+el:
    id: 11
    voices:
       voice_!: Dimitris-Greek
    name: Greek
-hebrew:
+iw:
    id: 12
    voices:
       voice_1: he-IL-Asaf-Hebrew
    name: Hebrew
-italian:
+it:
    id: 13
    voices:
       voice_!: Vittorio-Italian
       voice_2: Chiara-Italian
    name: Italian
-japanese:
+ja:
    id: 14
    voices:
       voice_!: Sakura-Japanese
    name: Japanese
-korean:
+ko:
    id: 15
    voices:
       voice_1: Minji-Korean
    name: Korean
-norwegian:
+no:
    id: 16
    voices:
       voice_1: Olav-Norwegian
       voice_2: Kari-Norwegian
    name: Norwegian
-polish:
+pl:
    id: 17
    voices:
       voice_1: Ania-Polish
    name: Polish
-romanian:
+ro:
    id: 18
    voices:
       voice_1: ro-RO-Andrei-Romanian
    name: Romanian
-portuguese:
+pt:
    id: 19
    voices:
       voice_1: Celia-Portuguese
    name: Portuguese
-russian:
+ru:
    id: 20
    voices:
       voice_!: Alyona-Russian
    name: Russian
-spanish:
+es:
    id: 21
    voices:
       voice_!: Antonio-Spanish
       voice_2: Ines-Spanish
    name: Spanish
-swedish:
+sv:
    id: 22
    voices:
       voice_!: Erik-Swedish
    name: Swedish
-turkish:
+tr:
    id: 23
    voices:
       voice_1: Ipek-Turkish

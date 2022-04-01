@@ -3,21 +3,21 @@ from flask import Flask, request, make_response, render_template, url_for, g, se
 from flask_restful import Resource, Api
 from json import dumps
 from loguru import logger
-from google_trans_new import google_translator 
+from google.cloud import translate_v2 as translate
 from google.cloud import speech
 from pyttsreverso import pyttsreverso  
-import yaml, uuid, base64, os, io, wave
+import yaml, uuid, base64, os, io, wave, json
 from pydub import AudioSegment
 from wavinfo import WavInfoReader
 import soundfile
 
-detector = google_translator()
+
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/opt/ttstt/keys/key-file.json'
 
 # Getting list of supported voices
 def get_voices():
-    with open("/opt/ttstt/voices.yaml", 'r') as stream:
+    with open("./voices.yaml", 'r') as stream:
         try:
             logger.info("Reading Voices from voices file")
             return yaml.safe_load(stream)
@@ -26,7 +26,7 @@ def get_voices():
 
 # Getting the list of supported languages
 def get_languages():
-    with open("/opt/ttstt/languages.yaml", 'r') as stream:
+    with open("./languages.yaml", 'r') as stream:
         try:
             logger.info("Reading Languages from languages file")
             return yaml.safe_load(stream)
@@ -165,12 +165,11 @@ def detect():
     # logger.info("Writing devices to file")
     try:
         data = list(request.form.keys())[0]
-        logger.debug("Data:" + data)
-        detect_result = detector.detect(data)
-        logger.debug("Detect Result:" + str(detect_result))
-        detected_lang = str(detect_result).split(',')[1].replace(']','').replace("'","").strip()
-        logger.debug("Detected Lang:" + detected_lang)
-        return jsonify('{"success":1,"lang":"' + detected_lang + '"}')
+        translate_client = translate.Client()
+        result = translate_client.detect_language(data)
+        detected_lang = result.get('language')
+        lang_name = get_voices()[detected_lang].get("name")
+        return jsonify('{"success":1,"lang":"' + detected_lang + '","name":"' + lang_name + '"}')
     except Exception as e:
         logger.error( str(e))
         return jsonify('{"success":0,"error":"' + str(e) +'"}')
