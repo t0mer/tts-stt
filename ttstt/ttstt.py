@@ -149,7 +149,6 @@ def devices():
 def stt():
     return render_template('stt.html')
 
-
 @app.route('/voices',methods=['POST'])
 def voices():
     language = list(request.form.keys())[0]
@@ -158,7 +157,6 @@ def voices():
 @app.route('/languages')
 def languages():
     return jsonify(get_languages())
-
 
 @app.route('/detect', methods=['POST'])
 def detect():
@@ -173,8 +171,6 @@ def detect():
     except Exception as e:
         logger.error( str(e))
         return jsonify('{"success":0,"error":"' + str(e) +'"}')
-
-
 
 @app.route('/play')
 def play():
@@ -207,14 +203,9 @@ def send_js(path):
     return send_from_directory('js', path)
 
 # Serve CSS
-
-
 @app.route('/css/<path:path>')
 def send_css(path):
     return send_from_directory('css', path)
-
-
-
 
 # Start Application
 if __name__ == '__main__':
