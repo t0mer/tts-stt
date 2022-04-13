@@ -1,0 +1,27 @@
+name: "pre-release"
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  pre-release:
+    name: "Pre Release"
+    runs-on: "ubuntu-latest"
+
+    steps:
+      - name: Get semantic version from file
+        id: getSemver
+        run: echo "::set-output name=semver::$(cat VERSION | tr -d ' \t\n\r' )"
+
+      - name: "Create Release"
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.getSemver.outputs.semver }}"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            requirements.txt
+            ttsstt/*
