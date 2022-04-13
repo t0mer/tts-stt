@@ -15,6 +15,13 @@ jobs:
         id: getSemver
         run: echo "::set-output name=semver::$(cat VERSION | tr -d ' \t\n\r' )"
 
+      - name: Create Tag
+        uses: negz/create-tag@v1
+        with:
+          version: ${{ steps.getSemver.outputs.semver }}
+          message: ${{ steps.getSemver.outputs.semver }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: "Create Release"
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
