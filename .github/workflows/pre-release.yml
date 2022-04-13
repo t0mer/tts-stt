@@ -20,23 +20,23 @@ jobs:
         id: getSemver
         run: echo "::set-output name=semver::$(cat VERSION | tr -d ' \t\n\r' )"
      
-      - name: show semantic version from file
-        id: showSemver
-        run: echo "${{ steps.getSemver.outputs.semver }}"
-#       - name: Create Tag
-#         uses: negz/create-tag@v1
-#         with:
-#           version: "${{ steps.getSemver.outputs.semver }}"
-#           message: "${{ steps.getSemver.outputs.semver }}"
-#           token: "${{ secrets.GITHUB_TOKEN }}"
+#       - name: show semantic version from file
+#         id: showSemver
+#         run: echo "${{ steps.getSemver.outputs.semver }}"
+      - name: Create Tag
+        uses: negz/create-tag@v1
+        with:
+          version: "${{ steps.getSemver.outputs.semver }}"
+          message: "${{ steps.getSemver.outputs.semver }}"
+          token: "${{ secrets.GITHUB_TOKEN }}"
 
-#       - name: "Create Release"
-#         uses: "marvinpinto/action-automatic-releases@latest"
-#         with:
-#           repo_token: "${{ secrets.GITHUB_TOKEN }}"
-#           automatic_release_tag: "${{ steps.getSemver.outputs.semver }}"
-#           prerelease: true
-#           title: "Development Build"
-#           files: |
-#             requirements.txt
-#             ttsstt/*
+      - name: "Create Release"
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "${{ steps.getSemver.outputs.semver }}"
+          prerelease: true
+          title: "Development Build"
+          files: |
+            requirements.txt
+            ttsstt/*
