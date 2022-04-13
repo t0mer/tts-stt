@@ -9,6 +9,7 @@ on:
       - completed  
 
 jobs:
+  on-success:
   docker:
     name: "Docker Build"
     runs-on: ubuntu-latest
