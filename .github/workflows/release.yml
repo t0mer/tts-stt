@@ -2,9 +2,13 @@ name: "release"
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main # or the name of your main branch
+  workflow_run:
+    workflows: [SonarCloud Scan]
+    types:
+      - completed  
+#   push:
+#     branches:
+#       - main # or the name of your main branch
 
 
 jobs:
