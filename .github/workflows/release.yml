@@ -13,7 +13,7 @@ on:
 
 jobs:
   pre-release:
-    name: "Pre Release"
+    name: "Release"
     runs-on: "ubuntu-latest"
 
     steps:
