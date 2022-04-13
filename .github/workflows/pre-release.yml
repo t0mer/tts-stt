@@ -1,9 +1,11 @@
 name: "pre-release"
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - "main"
+      - main # or the name of your main branch
+
 
 jobs:
   pre-release:
