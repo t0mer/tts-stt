@@ -6,13 +6,9 @@ on:
     workflows: [SonarCloud Scan]
     types:
       - completed  
-#   push:
-#     branches:
-#       - main # or the name of your main branch
-
 
 jobs:
-  pre-release:
+  release:
     name: "Release"
     runs-on: "ubuntu-latest"
 
