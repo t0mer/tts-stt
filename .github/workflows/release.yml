@@ -9,7 +9,6 @@ on:
 
 jobs:
   on-success:
-  release:
     name: "Release"
     runs-on: "ubuntu-latest"
 

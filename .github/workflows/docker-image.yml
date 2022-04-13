@@ -10,7 +10,6 @@ on:
 
 jobs:
   on-success:
-  docker:
     name: "Docker Build"
     runs-on: ubuntu-latest
     steps:
